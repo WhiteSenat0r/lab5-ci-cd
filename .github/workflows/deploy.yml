@@ -9,7 +9,7 @@ jobs:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     # Запускається тільки якщо всі перевірки пройшли успішно
-    needs: [build]
+    needs: [Build]
     if: success()
     steps:
       - name: Checkout code
